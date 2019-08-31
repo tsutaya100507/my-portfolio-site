@@ -104,7 +104,119 @@ h1 {
     margin-left: 0;
   }
   h1 {
-    font-size: 50px;
+    font-size: 60px;
   }
+}
+
+.about {
+  position: relative;
+  padding-top: 200px;
+  font-family: 'Inconsolata', monospace;
+  /* 仮置き */
+  height: 300px;
+  color: #FFFFFF;
+}
+
+.about-me {
+  padding-left: 30px;
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 10px;
+}
+
+.about-me > span:first-child::after {
+  content: ":";
+  color: red;
+  font-size: 70px;
+  letter-spacing: -10px;
+}
+
+.about-me > span:last-child::before {
+  content: ":";
+  color: red;
+  font-size: 70px;
+  letter-spacing: 10px;
+}
+
+.self-introduction {
+  padding-left: 30px;
+  /* width: 55%; */
+  line-height: 3;
+}
+
+.skills {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  min-width: 35%;
+  color: #FFFFFF;
+  padding: 20px 40px;
+  background-color: #1F1F1F;
+  box-shadow: 0 0 38px rgba(0, 0, 0, 0.3), 0 0 12px rgba(0, 0, 0, 0.22);
+}
+
+.skills h3 {
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+
+.skills ul {
+  font-size: 20px;
+}
+
+.skills li {
+  margin-bottom: 30px;
+  list-style: none;
+  /* background: linear-gradient(transparent 40%, rgb(102, 181, 255) 60%); */
+}
+
+.skills span {
+  position: relative;
+}
+
+.skills span::after {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  content: '';
+  width: 105%;
+  height: 6px;
+  background-color: #0097A7;
+  opacity: 0.5;
+  border-radius: 4px; 
+}
+
+@media(max-width: 758px) {
+  .about {
+    padding-top: 0;
+  }
+
+  .about-me {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .self-introduction {
+    padding: 0 100px;
+  }
+
+  .skills {
+    display: none;
+  }
+}
+
+@media(max-width: 414px) {
+  .about {
+    top: -130px;
+  }
+  .self-introduction {
+    padding: 0 30px;
+  }  
+}
+
+.skill {
+  height: 500px;
 }
 
