@@ -51,7 +51,7 @@ body {
   transform: rotate(-90deg);
   width: auto;
   color: #FFFFFF;
-  margin-left: -43px;
+  margin-left: -10px;
 }
 
 .self-description > p > span {
@@ -216,7 +216,8 @@ h1 {
   }  
 }
 
-.skill {
+.skill-container {
+  position: relative;
   height: 500px;
 }
 
