@@ -113,7 +113,7 @@ h1 {
   padding-top: 200px;
   font-family: 'Inconsolata', monospace;
   /* 仮置き */
-  height: 300px;
+  /* height: 300px; */
   color: #FFFFFF;
 }
 
@@ -219,5 +219,109 @@ h1 {
 .skill-container {
   position: relative;
   height: 500px;
+  font-family: 'Inconsolata', monospace;
 }
 
+.skill-title {
+  width: 50%;
+  position: relative;
+  margin-bottom: 40px;
+  text-align: left;
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 10px;
+}
+
+.front-title {
+  margin-left: auto;
+}
+
+.front-description {
+  margin-left: auto;
+  width: 50%;
+  padding-left: 5px;
+  line-height: 3;
+  color: #FFFFFF;
+}
+
+.front-description > span {
+  color: red;
+}
+
+.skill-title > span {
+  color: #0c37f5;
+}
+
+@media(max-width: 758px) {
+  .skill-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .front-description {
+    width: 100%;
+    padding: 0 100px;
+  }
+}
+
+@media(max-width: 414px) {
+  .front-description {
+    padding: 0 30px;
+  }
+}
+ 
+
+.backend-title {
+  width: 60%;
+  padding-left: 30px;
+}
+
+.backend-title > span:first-child {
+  color: #FFFFFF;
+}
+
+.backend-title > .or {
+  color: #FFFFFF;
+}
+
+.backend-title > .or::before {
+  content: '||';
+  color: red;
+}
+
+.back-description {
+  margin-right: auto;
+  padding-left: 5px;
+  padding-left: 30px;
+  line-height: 3;
+  color: #FFFFFF;
+}
+
+.back-description > span {
+  color: red;
+}
+
+@media(max-width: 758px) {
+  .backend-title {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .back-description {
+    width: 100%;
+    padding: 0 100px;
+  }
+}
+
+@media(max-width: 414px) {
+  .backend-title {
+    font-size: 30px;
+  }
+
+  .back-description {
+    padding: 0 30px;
+  }
+}
