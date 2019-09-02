@@ -36,8 +36,11 @@ body {
   font-size: 280px;
   font-weight: bold;
   color: #1F1F1F;
-  padding-left: 100px;
   overflow: hidden;
+}
+
+.letter-top {
+  padding-left: 100px;
 }
 
 .self-description {
@@ -112,8 +115,6 @@ h1 {
   position: relative;
   padding-top: 200px;
   font-family: 'Inconsolata', monospace;
-  /* 仮置き */
-  /* height: 300px; */
   color: #FFFFFF;
 }
 
@@ -149,12 +150,16 @@ h1 {
 .skills {
   position: absolute;
   top: 200px;
-  right: 0;
+  /* right: 0; */
   min-width: 35%;
   color: #FFFFFF;
   padding: 20px 40px;
   background-color: #1F1F1F;
   box-shadow: 0 0 38px rgba(0, 0, 0, 0.3), 0 0 12px rgba(0, 0, 0, 0.22);
+}
+
+.skills-right {
+  right: 0;
 }
 
 .skills h3 {
@@ -169,7 +174,6 @@ h1 {
 .skills li {
   margin-bottom: 30px;
   list-style: none;
-  /* background: linear-gradient(transparent 40%, rgb(102, 181, 255) 60%); */
 }
 
 .skills span {
@@ -220,6 +224,7 @@ h1 {
   position: relative;
   height: 500px;
   font-family: 'Inconsolata', monospace;
+  padding-top: 100px;
 }
 
 .skill-title {
@@ -231,6 +236,12 @@ h1 {
   font-weight: bold;
   color: #FFFFFF;
   letter-spacing: 10px;
+}
+
+.letter-client {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
 }
 
 .front-title {
@@ -250,7 +261,12 @@ h1 {
 }
 
 .skill-title > span {
-  color: #0c37f5;
+  color: #a9b6f5;
+}
+
+.skills-left {
+  top: 100px;
+  left: 0;
 }
 
 @media(max-width: 758px) {
@@ -266,11 +282,21 @@ h1 {
 }
 
 @media(max-width: 414px) {
+  .skill-container {
+    padding-top: 0;
+    margin-top: -50px;
+  }
+  
   .front-description {
     padding: 0 30px;
   }
 }
  
+.letter-server {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
 
 .backend-title {
   width: 60%;
@@ -278,16 +304,20 @@ h1 {
 }
 
 .backend-title > span:first-child {
-  color: #FFFFFF;
+  color: rgb(240, 215, 215);
 }
 
 .backend-title > .or {
-  color: #FFFFFF;
+  color: red;
 }
 
-.backend-title > .or::before {
+/* .backend-title > .or::before {
   content: '||';
   color: red;
+} */
+
+.sp_br {
+  display: none;
 }
 
 .back-description {
@@ -300,6 +330,10 @@ h1 {
 
 .back-description > span {
   color: red;
+}
+
+.skills-back {
+  top: 100px;
 }
 
 @media(max-width: 758px) {
@@ -317,11 +351,25 @@ h1 {
 }
 
 @media(max-width: 414px) {
+  .container-backend {
+   margin-top: 50px; 
+  }
+  
   .backend-title {
-    font-size: 30px;
+    font-size: 40px;
+    letter-spacing: 20px;
+  }
+
+  .sp_br {
+    display: block;
   }
 
   .back-description {
     padding: 0 30px;
   }
+}
+
+
+.blog {
+  height: 500px;
 }
