@@ -1,0 +1,82 @@
+.shutter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1e1e1e;
+  z-index: 9999;
+  animation: finishShutter 3s forwards;
+}
+
+.shutter::before, .shutter::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.shutter::before {
+  background-color: red;
+  width: 0;
+  height: 1px;
+  animation: openUpShutter 3s forwards;
+}
+
+.shutter::after {
+  width: 120%;
+  height: 0;
+  margin-left: -10%;
+  background-color: #f3f3f3;
+  animation: openDownShutter 3s forwards;
+}
+
+@keyframes finishShutter {
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -5;
+  }
+}
+
+@keyframes openUpShutter {
+  0%{
+    width:0;
+    height:1px;
+  }
+  50%{
+    width:100%;
+    height:1px;
+  }
+  90%{
+    width:100%;
+    height:100%;
+  }
+  100%{
+    width:100%;
+    height:100%;
+  }
+}
+
+@keyframes openDownShutter {
+  60%{
+    width:120%;
+    height:0;
+    transform:rotate(5deg);
+  }
+  90%{
+    width:120%;
+    height:100%;
+    transform:rotate(-5deg);
+  }
+  100%{
+    width:120%;
+    height:100%;
+    transform:rotate(-5deg);
+  }
+}
