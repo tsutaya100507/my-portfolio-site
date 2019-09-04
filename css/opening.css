@@ -80,3 +80,14 @@
     transform:rotate(-5deg);
   }
 }
+
+.js-fadein {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s;
+}
+
+.is-show {
+  opacity: 1;
+  transform: translateY(0px);
+}

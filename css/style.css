@@ -80,8 +80,8 @@ body {
   position: relative;
   width: 300px;
   line-height: 30px;
-
 }
+
 
 .self-description > p {
   transform: rotate(-90deg);
@@ -89,6 +89,12 @@ body {
   color: rgb(230, 227, 227);
   margin-left: -10px;
   font-size: 18px;
+  opacity: 0;
+}
+
+#self-description.desc-active {
+  opacity: 1;
+  transition: 1.5s opacity ease 1s;
 }
 
 .self-description > p > span {
@@ -103,6 +109,12 @@ h1 {
   font-weight: bold;
   color: #FFFFFF;
   font-family: 'Montserrat Subrayada', sans-serif;
+  opacity: 0;
+}
+
+#title.title-active {
+  opacity: 1;
+  transition: 1.5s opacity ease 1s;
 }
 
 @media(max-width: 1200px) {
